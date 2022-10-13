@@ -30,20 +30,305 @@
       <div>
         <div class="filtrar-ordernar">
           <span>Filtrar por</span>
-          <span>Ordernar por v</span>
+          <div>
+            <span>Ordenar por </span>
+            <select name="ordenar" id="ordenar">
+              <option value="mas-vendido">Más vendidos</option>
+              <option value="titulo-a-z">Título A-Z</option>
+              <option value="titulo-z-a">Título Z-A</option>
+              <option value="titulo-z-a">Mayor precio</option>
+              <option value="titulo-z-a">Menor precio</option>
+            </select>
+          </div>
         </div>
         <div class="filtrador-productos">
-          <div class="filtrador">
+          <form class="filtrador">
             <div>
               <span>Precio</span>
-              <br />
-              min: max:
+              <div id="div-precio">
+                <input id="min-precio" type="number" value="100" />
+                <span>-</span>
+                <input id="max-precio" type="number" value="1500" />
+              </div>
+            </div>
+            <div>
+              <span>Tipo de producto</span>
+              <div>
+                <input
+                  type="checkbox"
+                  id="limpiadores"
+                  name="limpiadores"
+                  value="limpiadores"
+                />
+                <label for="limpiadores">Limpiadores</label><br />
+
+                <input
+                  type="checkbox"
+                  id="tonicos"
+                  name="tonicos"
+                  value="tonicos"
+                />
+                <label for="tonicos">Tónicos</label><br />
+
+                <input
+                  type="checkbox"
+                  id="sueros"
+                  name="sueros"
+                  value="sueros"
+                />
+                <label for="sueros">Sueros</label><br />
+
+                <input
+                  type="checkbox"
+                  id="cremas"
+                  name="cremas"
+                  value="cremas"
+                />
+                <label for="cremas">Cremas</label><br />
+
+                <input
+                  type="checkbox"
+                  id="aceites-faciales"
+                  name="aceites-faciales"
+                  value="aceites-faciales"
+                />
+                <label for="aceites-faciales">Aceites Faciales</label><br />
+
+                <input
+                  type="checkbox"
+                  id="protector-solar"
+                  name="protector-solar"
+                  value="protector-solar"
+                />
+                <label for="protector-solar">Protector Solar</label><br />
+
+                <input
+                  type="checkbox"
+                  id="mascarillas"
+                  name="mascarillas"
+                  value="mascarillas"
+                />
+                <label for="mascarillas">Mascarillas</label><br />
+
+                <input
+                  type="checkbox"
+                  id="exfoliantes"
+                  name="exfoliantes"
+                  value="exfoliantes"
+                />
+                <label for="exfoliantes">Exfoliantes</label><br />
+
+                <input
+                  type="checkbox"
+                  id="balsamos-labiales"
+                  name="balsamos-labiales"
+                  value="balsamos-labiales"
+                />
+                <label for="balsamos-labiales">Bálsamos Labiales</label><br />
+
+                <input
+                  type="checkbox"
+                  id="rutinas-completas"
+                  name="rutinas-completas"
+                  value="rutinas-completas"
+                />
+                <label for="rutinas-completas">Rutinas Compeltas</label><br />
+              </div>
+            </div>
+            <div>
+              <span>Soluciones</span>
+              <div>
+                <input type="checkbox" id="acne" name="acne" value="acne" />
+                <label for="acne">Acné</label><br />
+
+                <input
+                  type="checkbox"
+                  id="hidratacion"
+                  name="hidratacion"
+                  value="hidratacion"
+                />
+                <label for="hidratacion">Hidratación</label><br />
+
+                <input
+                  type="checkbox"
+                  id="manchas-y-cicatrices"
+                  name="manchas-y-cicatrices"
+                  value="manchas-y-cicatrices"
+                />
+                <label for="manchas-y-cicatrices">Manchas Y Cicatrices</label
+                ><br />
+
+                <input
+                  type="checkbox"
+                  id="pigmentacion-irregular"
+                  name="pigmentacion-irregular"
+                  value="pigmentacion-irregular"
+                />
+                <label for="pigmentacion-irregular"
+                  >Pigmentación Irregular</label
+                ><br />
+
+                <input
+                  type="checkbox"
+                  id="arrugas-y-signos-de-la-edad"
+                  name="arrugas-y-signos-de-la-edad"
+                  value="arrugas-y-signos-de-la-edad"
+                />
+                <label for="arrugas-y-signos-de-la-edad"
+                  >Arrugas y signos de la edad</label
+                ><br />
+
+                <input
+                  type="checkbox"
+                  id="piel-sensible-y-rojeces"
+                  name="piel-sensible-y-rojeces"
+                  value="piel-sensible-y-rojeces"
+                />
+                <label for="piel-sensible-y-rojeces"
+                  >Piel Sensible y Rojeces</label
+                ><br />
+
+                <input
+                  type="checkbox"
+                  id="ojeras"
+                  name="ojeras"
+                  value="ojeras"
+                />
+                <label for="ojeras">Ojeras</label><br />
+
+                <input
+                  type="checkbox"
+                  id="brotes-y-espinillas"
+                  name="brotes-y-espinillas"
+                  value="brotes-y-espinillas"
+                />
+                <label for="brotes-y-espinillas">Brotes Y Espinillas</label
+                ><br />
+
+                <input
+                  type="checkbox"
+                  id="control-de-sebo"
+                  name="control-de-sebo"
+                  value="control-de-sebo"
+                />
+                <label for="control-de-sebo">Control De Sebo</label><br />
+
+                <input
+                  type="checkbox"
+                  id="piel-opaca"
+                  name="piel-opaca"
+                  value="piel-opaca"
+                />
+                <label for="piel-opaca"></label>Piel Opaca<br />
+
+                <input
+                  type="checkbox"
+                  id="poros-obstruidos"
+                  name="poros-obstruidos"
+                  value="poros-obstruidos"
+                />
+                <label for="poros-obstruidos">Poros Obstruidos</label><br />
+              </div>
+            </div>
+            <div>
+              <span>Tipo de piel</span>
+              <div>
+                <input
+                  type="checkbox"
+                  id="piel-grasa"
+                  name="piel-grasa"
+                  value="piel-grasa"
+                />
+                <label for="piel-grasa"></label>Piel Grasa<br />
+
+                <input
+                  type="checkbox"
+                  id="piel-normal-o-mixta"
+                  name="piel-normal-o-mixta"
+                  value="piel-normal-o-mixta"
+                />
+                <label for="piel-normal-o-mixta">Piel Normal O Mixta</label
+                ><br />
+
+                <input
+                  type="checkbox"
+                  id="piel-seca"
+                  name="piel-seca"
+                  value="piel-seca"
+                />
+                <label for="piel-seca"></label>Piel Seca<br />
+
+                <input
+                  type="checkbox"
+                  id="piel+30"
+                  name="piel+30"
+                  value="piel+30"
+                />
+                <label for="piel+30"></label>Piel +30<br />
+              </div>
+            </div>
+            <div>
+              <span>Momento de la rutina</span>
+              <div>
+                <input
+                  type="checkbox"
+                  id="p1-limpieza"
+                  name="p1-limpieza"
+                  value="p1-limpieza"
+                />
+                <label for="p1-limpieza">Paso 1: Limpieza</label><br />
+
+                <input
+                  type="checkbox"
+                  id="p2-hidratacion"
+                  name="p2-hidratacion"
+                  value="p2-hidratacion"
+                />
+                <label for="p2-hidratacion">Paso 2: Hidratación</label><br />
+
+                <input
+                  type="checkbox"
+                  id="p3-humectacion"
+                  name="p3-humectacion"
+                  value="p3-humectacion"
+                />
+                <label for="p3-humectacion">Paso 3: Humectación</label><br />
+
+                <input
+                  type="checkbox"
+                  id="p4-proteccion"
+                  name="p4-proteccion"
+                  value="p4-proteccion"
+                />
+                <label for="p4-proteccion">Paso 4: Protección</label><br />
+
+                <input
+                  type="checkbox"
+                  id="adicionales"
+                  name="adicionales"
+                  value="adicionales"
+                />
+                <label for="adicionales">Adicionales</label><br />
+              </div>
+            </div>
+          </form>
+          <div class="productos">
+            <div class="grid-container">
+              <div>1</div>
+              <div>2</div>
+              <div>3</div>
+              <div>4</div>
+              <div>5</div>
+              <div>6</div>
+              <div>7</div>
+              <div>8</div>
+              <div>9</div>
+              <div>10</div>
             </div>
           </div>
-
-          <div class="productos"></div>
         </div>
       </div>
     </section>
+    <footer></footer>
   </body>
 </html>
