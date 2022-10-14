@@ -1,0 +1,217 @@
+/* Header */
+header {
+  width: 100%;
+  height: 383px;
+  background-image: url("/img/nosotros/header/nosotros-bg-heder.svg");
+  background-size: cover;
+  background-position: center;
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+header > div {
+  margin: auto;
+  width: auto;
+}
+header h1 {
+  margin: 0;
+  padding: 0px 0px;
+  border: 0;
+  font-size: 65px;
+}
+header div > div {
+  margin: 0;
+  font-size: 20px;
+  padding-bottom: 30px;
+}
+
+/* Section 1 */
+.section1 {
+  width: 100%;
+  height: 494px;
+  background-image: url("/img/nosotros/section1/nosotros-bg-section1.webp");
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+.section1 p {
+  width: 385px;
+  font-family: Arial;
+  font-weight: 500;
+  font-size: 17px;
+  margin-left: 195px;
+}
+
+/* Section 2 */
+.section2 {
+  width: 100%;
+  height: 549px;
+  background-image: url("/img/nosotros/section2/nosotros-bg-section2.svg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 100px;
+}
+
+.section2 img {
+  height: 397px;
+}
+
+.section2 p {
+  width: 451px;
+  font-family: Arial;
+  font-weight: 500;
+  font-size: 17px;
+  margin-left: 100px;
+}
+
+/* Section 3 */
+.section3 {
+  height: 591px;
+  display: grid;
+  grid-template-columns: 55fr 45fr;
+  grid-gap: 0px;
+}
+.section3 .div-izquierda {
+  background-image: url("/img/nosotros/section3/nosotros-section3.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.section3 .div-derecha {
+  background-image: url("/img/nosotros/section3/nosotros-bg-section3.svg");
+  background-size: cover;
+  background-position: right;
+}
+
+.div-derecha > div {
+  padding: 45px 0 45px 70px;
+  height: 100%;
+}
+
+.section3 .marca {
+  font-family: "Oswald", sans-serif;
+  color: white;
+  font-size: 20px;
+}
+.section3 .titulo {
+  font-family: "Oswald", sans-serif;
+  color: white;
+  font-size: 60px;
+}
+.section3 .productos-son {
+  margin: 25px 0;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  color: white;
+}
+
+.productos-son img {
+  height: 33px;
+}
+
+.productos-son p {
+  font-size: 20px;
+  margin-left: 30px;
+  margin-bottom: 0;
+}
+
+.section3 button {
+  width: 223px;
+  height: 51px;
+  border: 0;
+  background-color: white;
+  font-family: Arial;
+  font-weight: 550;
+  font-size: 14px;
+}
+.section3 button:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+/* Section 4 */
+.section4 {
+  height: 612px;
+  display: grid;
+  grid-template-columns: 7fr 3fr;
+  grid-gap: 0px;
+}
+.info-izquierda {
+  background-image: url("/img/nosotros/section4/nosotros-bg-section4.svg");
+  background-size: cover;
+  background-position: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info-izquierda > div {
+  width: 710px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px 70px;
+}
+.info-izquierda > div > div {
+  border-bottom: solid 2px;
+}
+.info-izquierda p {
+  font-family: Arial;
+  font-size: 16px;
+}
+.info-izquierda span {
+  color: #1a66e6;
+}
+
+.section4 .img-derecha {
+  background-image: url("/img/nosotros/section4/nosotros-section4-imgderecha.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+/* Section 5 */
+.section5 {
+  background-image: url("/img/nosotros/section5/nosotros-section5-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 480px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.section5 > div {
+  backdrop-filter: blur(10px);
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 30px;
+}
+.section5 h1 {
+  font-family: "Oswald", sans-serif;
+  color: white;
+  font-size: 50px;
+}
+.section5 p {
+  font-family: "Oswald", sans-serif;
+  color: white;
+  font-size: 15px;
+}
+.section5 button {
+  width: 223px;
+  height: 51px;
+  border: 0;
+  background-color: black;
+  color: white;
+  font-family: Arial;
+  font-weight: 550;
+  font-size: 14px;
+}
+.section5 button:hover {
+  background-color: #1a66e6;
+  color: white;
+  cursor: pointer;
+}
