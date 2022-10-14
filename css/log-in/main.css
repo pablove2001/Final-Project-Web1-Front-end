@@ -1,0 +1,54 @@
+section.log-in {
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial;
+  font-weight: 600;
+}
+.log-in h1 {
+  font-family: "Oswald", sans-serif;
+  font-size: 45px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.log-in form > div,
+.log-in > div > div {
+  text-align: center;
+}
+.log-in form > input {
+  width: 550px;
+  height: 40px;
+}
+.log-in #submit {
+  margin: 5px 0 25px 0;
+}
+.log-in label {
+  margin: 10px 0;
+}
+#submit input {
+  width: 223px;
+  height: 51px;
+  border: 0;
+  background-color: black;
+  color: white;
+  font-family: Arial;
+  font-weight: 550;
+  font-size: 14px;
+}
+#submit input:hover {
+  background-color: #1a66e6;
+  color: white;
+  cursor: pointer;
+}
+.log-in a {
+  color: rgb(0, 0, 0);
+  background-color: transparent;
+  text-decoration: none;
+  text-decoration: underline;
+}
+.log-in a:hover {
+  color: #1a66e6;
+  background-color: transparent;
+  text-decoration: underline;
+}
