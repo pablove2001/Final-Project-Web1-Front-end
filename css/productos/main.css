@@ -123,17 +123,38 @@ section .filtrador {
 /* Productos */
 .productos {
   width: 100%;
+  text-align: left;
 }
-
 .grid-container {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  grid-gap: 7px;
+  grid-gap: 30px 7px;
 }
-
-.grid-container > div {
-  background-color: #ececec;
-  text-align: center;
-  font-size: 30px;
-  height: 300px;
+.grid-container a {
+  text-decoration: none;
+}
+.grid-container > a > div {
+  height: auto;
+}
+.div-img {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+.div-img img {
+  width: 100%;
+  object-fit: cover;
+  background-position: center;
+}
+.info-producto {
+  font-size: 17px;
+  font-weight: 400;
+  color: black;
+}
+.info-producto p {
+  margin: 0;
+}
+.titulo-producto {
+  height: 54px;
+  font-size: 18px;
 }
