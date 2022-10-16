@@ -1,81 +1,201 @@
-
-header{
-    width: 100%; 
+header {
+    width: 100%;
     height: 650px;
-    background-color: #B4BBA5; 
+    background-color: #B4BBA5;
     background-image: url("/img/index/fondo.png");
+    background-size: cover;
+    /*background-position: center;*/
     background-repeat: no-repeat;
     font-family: "Oswald", sans-serif;
+    display: flex;
+    /*align-items: center;*/
 }
 
-h1{
+header>div {
+    margin: auto;
+    width: auto;
+    margin-left: 50px;
+}
+
+header div>div {
+    margin: 0;
+    font-size: 20px;
+    padding-bottom: 30px;
+}
+
+h1 {
     font-size: 30px;
     color: rgb(0, 0, 0);
     margin-top: 50px;
     padding-top: 150px;
     margin-left: 50px;
 }
-h5.card-title{
-    color: rgb(60, 133, 11);
-}
-p{
+
+p {
     margin-left: 50px;
     font-family: 'Poppins';
     font-size: 30px;
 }
-p.card-text{
+
+text {
     color: rgb(0, 0, 0);
     font-size: 18px;
 }
 
-button#produc{
-    
+button#produc {
     margin-left: 160px;
     margin-top: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
 }
 
-h4.tipo{
+h4.tipo {
     color: rgb(2, 51, 2);
     font-family: "Oswald", sans-serif;
-    margin-top: 10px;
     padding-left: 500px;
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 10px;
+    margin-bottom: 0px;
 }
-h4.piel{
+
+h4.piel {
     color: rgb(0, 95, 67);
     font-family: "Oswald", sans-serif;
     font-size: 19px;
     /*margin-left: 50px;*/
     padding-left: 65px;
 }
-
-div#card{
-    width: 200px;
-    margin-left: 30px;
+h5.rut{
+    color: rgb(42, 143, 39);
+    text-align: center;
 }
-.gallery{
-    width: 100%;
+h4.carousel{
+    color: rgb(0, 95, 67);
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    /*margin-left: 50px;*/
+    padding-left: 65px;
 }
-.gallery > .gallery-item{
-    width: 300px;
-    height: 300px;
-    float: left;
-    box-sizing: border-box;
-    border-image-width: auto;
-    margin-left: 50px;
-    margin-right: 0px;
-    margin-bottom: 0px;
-    padding-top: 0px;
-}
-.gallery img{
+.gallery {
     width: 100%;
     height: 100%;
 }
-.clearfix::after{
+
+.gallery>.gallery-item {
+    width: 300px;
+    height: auto;
+    float: left;
+    box-sizing: border-box;
+    border-image-width: auto;
+    position: relative;
+    left: 100px;
+    margin-left: 80px;
+    /*
+    margin-left: 50px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    padding-top: 0px;*/
+}
+.gallery > .gallery-rut{
+    width: 100px;
+    height: auto;
+    float: left;
+    align-items: center;
+    box-sizing: border-box;
+    position: relative;
+    left: 100px;
+    margin-left: 150px;
+
+}
+
+.gallery img {
+    width: 100%;
+    height: 100%;
+}
+
+.clearfix::after {
     content: "";
     display: table;
     clear: both;
+}
+
+section {
+    width: 100%;
+    height: auto;
+}
+
+section.uno{
+    margin-bottom: 20px;
+}
+section.dos{
+    position: relative;
+}
+section.tres{
+    background-image: url(/img/index/media.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 450px;
+    position: relative;
+    display: flex;
+    
+}
+section >div{
+    position: relative;
+}
+div.media{
+    position: relative;
+    box-sizing: border-box;
+    float: left;
+    left: 50%;
+}
+
+div.ul-media{
+    position:absolute;
+    top: 50%;
+    left: 25%;
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+}
+p.media{
+    font-family :"Roboto", sans-serif;
+    color: rgb(145, 65, 0);
+    font-weight: bold ;
+    margin-top: 25%;
+
+}
+button#media{
+    position: relative;
+    left: 50%;
+}
+
+section.cuatro{
+    width: 100%;
+    height: 700px;
+    
+    position: relative;
+    margin-top: 30px;
+}
+.carousel{
+    width: 600px; 
+    height: 600px; 
+   }
+div.carousel{
+    position:relative;
+    left: 25%;
+    align-items: center;
+    height: 100%;
+    
+}
+div.kit-text{
+    position: relative;
+    left: 30%;
+    width: 30%;
+    height: 50px;
+    text-align: center;
+    font-family :"Roboto", sans-serif;
+    color: rgb(0, 95, 67);
+    
+
 }
