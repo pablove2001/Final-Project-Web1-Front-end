@@ -8,7 +8,7 @@ fetch(url)
   .then((productos) => {
     let elementos = "";
     productos.map((producto) => {
-      elementos += `<a href="/pages/index.html/${producto._id}">
+      elementos += `<a href="/pages/producto.html#${producto._id}">
               <div>
                 <div class="div-img">
                   <img src="${producto.img_url[0]}" alt="imagen producto" />
@@ -19,7 +19,9 @@ fetch(url)
                       ${producto.nombre}
                     </p>
                   </div>
-                  <span>★★★★★ (${Math.floor(Math.random() * 500)})</span><br />
+                  <span>${
+                    Math.floor(Math.random() * 2) == 1 ? "★★★★★" : "★★★★☆"
+                  } (${Math.floor(Math.random() * 500)})</span><br />
                   <span>$${producto.precio.toFixed(2)}</span>
                 </div>
               </div>
