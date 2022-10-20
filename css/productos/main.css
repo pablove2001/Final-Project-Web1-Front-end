@@ -25,6 +25,17 @@ header p {
   margin: 0;
   font-size: 25px;
 }
+@media only screen and (max-width: 844px) {
+  header {
+    height: 240px;
+  }
+  header h1 {
+    font-size: 40px;
+  }
+  header p {
+    font-size: 18px;
+  }
+}
 
 /* Section */
 section {
@@ -56,6 +67,17 @@ section .filtrar-ordernar {
   font-size: 16px;
   font-family: "Roboto", sans-serif;
 }
+@media only screen and (max-width: 844px) {
+  #filtrar-por {
+    color: white;
+    background-color: #1a66e6;
+    padding: 3px;
+    border-radius: 5px;
+  }
+  #filtrar-por:hover {
+    background-color: rgb(98, 98, 98);
+  }
+}
 
 /* Filtrador y productos */
 section .filtrador-productos {
@@ -85,9 +107,13 @@ section .filtrador {
   max-height: 130px;
   overflow-y: auto;
 }
-
 .filtrador label {
   margin: 0;
+}
+@media only screen and (max-width: 844px) {
+  .filtrador {
+    display: none;
+  }
 }
 
 /* Scrollbar */
@@ -157,4 +183,9 @@ section .filtrador {
 .titulo-producto {
   height: 54px;
   font-size: 18px;
+}
+@media only screen and (max-width: 1060px) {
+  .grid-container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
