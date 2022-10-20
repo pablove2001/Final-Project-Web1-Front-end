@@ -1,0 +1,69 @@
+header{
+    width: 100%;
+    height: 200px;
+    font-family: "Oswald", sans-serif;
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    background-color: rgba(76, 143, 74, 0.979);
+    text-align: center;
+}
+
+header > div{
+    position:absolute;
+      left: 5px;
+      right: 5px;
+    text-align: center;
+    align-items: center;
+  }
+
+div.espacio{
+    width: 100%;
+    height: 100%;
+    margin-top: 40px;
+ 
+}
+
+section{
+
+    width: 100%;
+    height:  100%;
+    align-items: center;
+    
+}
+img.ajuste{
+    width: 50%;
+    height: 80%;
+ 
+    align-items: center;
+    position: relative;
+    left: 25%;
+    top: 30px;
+}
+
+#imag-card{
+ 
+    width: 100%;
+    height: 100%;
+
+}
+
+#div-imgp{
+
+    width: auto;
+    height: auto;
+    align-items: center;
+    position: relative;
+    left: 25%;
+   width: 50%;
+
+}
+
+h3.ingre{
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+div.card-title{
+    text-align: center;
+}

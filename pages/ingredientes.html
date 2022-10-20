@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>INGREDIENTES E INSTRUCCIONES</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/css/global/main.css" />
+    <link rel="stylesheet" href="/css/ingredientes/main.css">
+</head>
+
+<body>
+    <!-- Barra de navegación  git commit -m "pages/index.html comentario"-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Productos
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Opcion1</a>
+                        <a class="dropdown-item" href="#">Opcion2</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Opcion3</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Sobre Cleorganic
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Opcion1</a>
+                        <a class="dropdown-item" href="#">Opcion2</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Hair Care</a>
+                </li>
+            </ul>
+            <div class="form-inline my-2 my-lg-0">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-suit-heart" viewBox="0 0 16 16">
+                    <path
+                        d="m8 6.236-.894-1.789c-.222-.443-.607-1.08-1.152-1.595C5.418 2.345 4.776 2 4 2 2.324 2 1 3.326 1 4.92c0 1.211.554 2.066 1.868 3.37.337.334.721.695 1.146 1.093C5.122 10.423 6.5 11.717 8 13.447c1.5-1.73 2.878-3.024 3.986-4.064.425-.398.81-.76 1.146-1.093C14.446 6.986 15 6.131 15 4.92 15 3.326 13.676 2 12 2c-.777 0-1.418.345-1.954.852-.545.515-.93 1.152-1.152 1.595L8 6.236zm.392 8.292a.513.513 0 0 1-.784 0c-1.601-1.902-3.05-3.262-4.243-4.381C1.3 8.208 0 6.989 0 4.92 0 2.755 1.79 1 4 1c1.6 0 2.719 1.05 3.404 2.008.26.365.458.716.596.992a7.55 7.55 0 0 1 .596-.992C9.281 2.049 10.4 1 12 1c2.21 0 4 1.755 4 3.92 0 2.069-1.3 3.288-3.365 5.227-1.193 1.12-2.642 2.48-4.243 4.38z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
+                </svg>
+            </div>
+        </div>
+    </nav>
+    <div id="espacio-nav"></div>
+    <header>
+        <div>INGREDIENTES E INSTRUCCIONES </div>
+    </header>
+    <div class="espacio">
+        <!-- section 1 -->
+        <section>
+            <div class="card-group">
+                <div class="card">
+                    <div class="card-title">INGREDIENTES</div>
+                    <div id="div-imgp"><img src="/img/ingredientes/limpiador.jpeg" class="card-img-top" alt=""
+                            id="imag-card"></div>
+                    <div class="card-body">
+                        <h5 class="card-title">JABÓN LÍQUIDO ACNTI EDAD</h5>
+                        </h5>
+                        <p class="card-text">Ácido glicólico, extracto de pepino, péptidos.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-title">INSTRUCCIONES</div>
+                    <div id="div-imgp"><img src="/img/ingredientes/lavado.jpg" class="card-img-top" alt="..."
+                            id="imag-card"></div>
+                    <div class="card-body">
+                        <h5 class="card-title">Modo de empleo del serum de ácido hialurónico: </h5>
+                        <p class="card-text">Aplicar el jabón líquido sobre la piel mojada, formar espuma y retirar con
+                            agua abundante.</p>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="card-group">
+                <div class="card">
+                    <div class="card-title">INGREDIENTES</div>
+                    <div id="div-imgp"><img src="/img/ingredientes/hidraserum.PNG" class="card-img-top" alt=""
+                            id="imag-card"></div>
+                    <div class="card-body">
+                        <h5 class="card-title">SERUM DE ÁCIDO HIALURÓNICO (DÍA)</h5>
+                        </h5>
+                        <p class="card-text">Ácido hialurónico, extracto de jojoba.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-title">INSTRUCCIONES</div>
+                    <div id="div-imgp"><img src="/img/ingredientes/modoa.PNG" class="card-img-top" alt="..."
+                            id="imag-card"></div>
+                    <div class="card-body">
+                        <h5 class="card-title">Modo de empleo del ácido hialurónico: </h5>
+                        <p class="card-text">Aplicar sobre la piel limpia 3 o 4 gotas en frente y mejillas y distribuye en todo el rostro.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-group">
+                <div class="card">
+                    <div class="card-title">INGREDIENTES</div>
+                    <div id="div-imgp"><img src="/img/ingredientes/hidraglow.jpeg" class="card-img-top" alt=""
+                            id="imag-card"></div>
+                    <div class="card-body">
+                        <h5 class="card-title">SERUM DE VITAMINA C (NOCHE)</h5>
+                        </h5>
+                        <p class="card-text">Ácido ascórbico (vitamina c), ácido hialurónico, extracto de toronja acuoso cosmético.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-title">INSTRUCCIONES</div>
+                    <div id="div-imgp"><img src="/img/ingredientes/modob.jpeg" class="card-img-top" alt="..."
+                            id="imag-card"></div>
+                    <div class="card-body">
+                        <h5 class="card-title">Modo de empleo del serum vitamina C: </h5>
+                        <p class="card-text">Agitar bien el producto y aplicar 3 o 4 gotas de serum sobre la piel limpia, de preferencia de noche, extenderlas suavemente por todo el rostro en especial en zonas con arrugas o manchas.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-group">
+                <div class="card">
+                    <div class="card-title">INGREDIENTES</div>
+                    <div id="div-imgp"><img src="/img/ingredientes/protector.jpeg" class="card-img-top" alt=""
+                            id="imag-card"></div>
+                    <div class="card-body">
+                        <h5 class="card-title">PROTECTOR SOLAR</h5>
+                        <p class="card-text">Multifilter t-80, óxido de zinc.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-title">INSTRUCCIONES</div>
+                    <div id="div-imgp"><img src="/img/ingredientes/modop.jpg" class="card-img-top" alt="..."
+                            id="imag-card"></div>
+                    <div class="card-body">
+                        <h5 class="card-title">Modo de empleo del protector solar: </h5>
+                        <p class="card-text">Uso diario, aplicar sobre la piel seca, 30 minutos antes de la exposición solar. Evitar el contacto con los ojos y las mucosas. Reaplicar cada 2 horas o después de transpirar, nadar o secarse con toalla. 
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-group">
+                <div class="card">
+                    <div class="card-title">INGREDIENTES</div>
+                    <div id="div-imgp"><img src="/img/ingredientes/serum.PNG" class="card-img-top" alt=""
+                            id="imag-card"></div>
+                    <div class="card-body">
+                        <h5 class="card-title">SERUM DE NIACINAMIDA</h5>                        </h5>
+                        <p class="card-text">Niacinamida5%, ácido hialurónico, extracto de centella asiática.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-title">INSTRUCCIONES</div>
+                    <div id="div-imgp"><img src="/img/ingredientes/modou.jpeg" class="card-img-top" alt="..."
+                            id="imag-card"></div>
+                    <div class="card-body">
+                        <h5 class="card-title">Modo de empleo del serum Niacinamida: </h5>
+                        <p class="card-text">Uso diario, aplicar sobre la piel seca, 30 minutos antes de la exposición solar. Evitar el contacto con los ojos y las mucosas. Reaplicar cada 2 horas o después de transpirar, nadar o secarse con toalla. 
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    <footer></footer>
+    </div>
+
+</body>
+
+</html>
