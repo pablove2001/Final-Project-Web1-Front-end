@@ -1,0 +1,72 @@
+.body{
+    background-color: azure;
+}
+
+div.cuadro{
+    height: 100%;
+    width: 100%;
+}
+
+div.todo{
+    width: 30%;
+    height: auto;
+    position: relative;
+    left:35%;
+
+}
+
+section.mcuenta {
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial;
+    font-weight: 600;
+  }
+  .mcuenta h1 {
+    font-family: "Oswald", sans-serif;
+    font-size: 45px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .mcuenta form > div,
+  .mcuenta > div > div {
+    text-align: center;
+  }
+  .mcuenta form > input {
+    width: 550px;
+    height: 40px;
+  }
+  .mcuenta #submit {
+    margin: 5px 0 25px 0;
+  }
+  .mcuenta label {
+    margin: 10px 0;
+  }
+  #submit input {
+    width: 223px;
+    height: 51px;
+    border: 0;
+    background-color: black;
+    color: white;
+    font-family: Arial;
+    font-weight: 550;
+    font-size: 14px;
+  }
+  #submit input:hover {
+    background-color: #1a66e6;
+    color: white;
+    cursor: pointer;
+  }
+  .mcuenta a {
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+    text-decoration: none;
+    text-decoration: underline;
+  }
+  .mcuenta a:hover {
+    color: #1a66e6;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
