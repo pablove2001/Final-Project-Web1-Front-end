@@ -15,7 +15,6 @@ header {
       right: 5px;
     text-align: center;
     align-items: center;
-
   }
 
   section{
@@ -102,7 +101,7 @@ td.cantidad{
   height: 50%;
   position:relative;
   top: 0px;
-  text-align: left;
+   text-align: left;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 20px;
 
