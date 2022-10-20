@@ -61,6 +61,13 @@
   /* background-color: rgb(231, 123, 66); */
   font-size: 17px;
   height: auto;
+  width: 100%;
+}
+@media only screen and (max-width: 1160px) {
+  .section-derecha {
+    max-width: 600px;
+    margin: auto;
+  }
 }
 #nombreProducto {
   font-size: 24px;
@@ -77,12 +84,7 @@
 .carrito {
   display: flex;
 }
-@media only screen and (max-width: 1160px) {
-  .carrito {
-    max-width: 600px;
-    margin: auto;
-  }
-}
+
 .carrito > input {
   width: 56px;
   text-align: center;
