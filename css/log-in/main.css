@@ -41,7 +41,7 @@ section.log-in {
   font-size: 14px;
 }
 #submit input:hover {
-  background-color: #1a66e6;
+  background-color: #a0a98e;
   color: white;
   cursor: pointer;
 }
@@ -52,7 +52,7 @@ section.log-in {
   text-decoration: underline;
 }
 .log-in a:hover {
-  color: #1a66e6;
+  color: #a0a98e;
   background-color: transparent;
   text-decoration: underline;
 }
