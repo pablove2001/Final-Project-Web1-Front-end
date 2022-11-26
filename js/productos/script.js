@@ -1,14 +1,14 @@
 console.log("Incio de JS");
 
-const url =
-  "https://my-json-server.typicode.com/pablove2001/My-JSON-Server-Productos/productos";
+const url = "http://localhost:3000/productos";
 
-fetch(url)
-  .then((response) => response.json())
-  .then((productos) => {
-    let elementos = "";
-    productos.map((producto) => {
-      elementos += `<a href="/pages/producto.html#${producto._id}">
+window.onload = () => {
+  fetch(url)
+    .then((response) => response.json())
+    .then((productos) => {
+      let elementos = "";
+      productos.map((producto) => {
+        elementos += `<a href="/pages/producto.html#${producto._id}">
               <div>
                 <div class="div-img">
                   <img src="${producto.img_url[0]}" alt="imagen producto" />
@@ -26,8 +26,9 @@ fetch(url)
                 </div>
               </div>
             </a>`;
+      });
+      document.getElementById("div-productos").innerHTML = elementos;
     });
-    document.getElementById("div-productos").innerHTML = elementos;
-  });
+};
 
 console.log("Fin del js");
