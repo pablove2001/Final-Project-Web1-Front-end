@@ -2,7 +2,7 @@
 header {
   width: 100%;
   height: 383px;
-  background-image: url("/img/nosotros/header/nosotros-bg-heder.svg");
+  background-color: #a0a98e;
   background-size: cover;
   background-position: center;
   font-family: "Oswald", sans-serif;
@@ -45,7 +45,7 @@ header div > div {
 .section1 {
   width: 100%;
   height: 494px;
-  background-image: url("/img/nosotros/section1/nosotros-bg-section1.webp");
+  background-image: url("/img/nosotros/section1/NOSOTROSPAGE.jpg");
   background-size: cover;
   background-position: center;
   display: flex;
@@ -65,7 +65,7 @@ header div > div {
   .section1 p {
     margin-left: 100px;
     backdrop-filter: blur(10px);
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: white(255, 255, 255, 0.7);
     border-radius: 5px;
     padding: 10px;
   }
@@ -138,8 +138,7 @@ header div > div {
   background-position: center;
 }
 .section3 .div-derecha {
-  background-image: url("/img/nosotros/section3/nosotros-bg-section3.svg");
-  background-size: cover;
+  background-color: #a0a98e;
   background-position: right;
 }
 .div-derecha > div {
@@ -245,7 +244,7 @@ header div > div {
   font-size: 16px;
 }
 .info-izquierda span {
-  color: #1a66e6;
+  color: #5b6050;
 }
 .section4 .img-derecha {
   background-image: url("/img/nosotros/section4/nosotros-section4-imgderecha.webp");
@@ -311,7 +310,7 @@ header div > div {
   font-size: 14px;
 }
 .section5 button:hover {
-  background-color: #1a66e6;
+  background-color: #a0a98e;
   color: white;
   cursor: pointer;
 }

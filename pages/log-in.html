@@ -22,52 +22,35 @@
     <link rel="stylesheet" href="/css/log-in/main.css" />
   </head>
   <body>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="/js/Login/login.js"></script>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="navbarDropdown"
-              role="button"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              Productos
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Opcion1</a>
-              <a class="dropdown-item" href="#">Opcion2</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Opcion3</a>
-            </div>
+
+          <li class="nav-item">
+                  <a href="nosotros.html"
+              <a class="nav-link" href="#">Sobre Cleorganic</a>
+                  </a>
           </li>
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="navbarDropdown"
-              role="button"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              Sobre Cleorganic
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Opcion1</a>
-              <a class="dropdown-item" href="#">Opcion2</a>
-            </div>
+          
+          <li class="nav-item">
+              <a href="productos.html"
+          <a class="nav-link" href="#">Productos</a>
+              </a>
+          </li>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Blog</a>
+              <a href="hair-care.html"
+          <a class="nav-link" href="#">Hair Care</a>
+              </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Hair Care</a>
+              <a href="rutinas.html"
+          <a class="nav-link" href="#">Rutinas</a>
+              </a>
           </li>
-        </ul>
+      </ul>
         <div class="form-inline my-2 my-lg-0">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -126,7 +109,7 @@
     <section class="log-in">
       <div>
         <h1>INICIAR SESIÓN</h1>
-        <form action="">
+        <form id = "log-in" action="http://localhost>3000/login" method="post">
           <label for="email">Correo electrónico</label><br />
           <input type="email" id="email" name="email" value="" /><br />
           <label for="password">Contraseña</label><br />
