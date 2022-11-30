@@ -24,7 +24,7 @@ function init_form() {
             console.log("Se ingreso correctamente");
             console.log(response);
             sessionStorage.setItem("token",response);
-           /*window.location = 'index.html';*/
+           window.location = 'index.html';  
         }).catch((err) => { 
             console.log(err);
         });

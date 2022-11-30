@@ -6,6 +6,13 @@ section.log-in {
   font-family: Arial;
   font-weight: 600;
 }
+
+@media only screen and (max-width:760px ){
+  section{
+    max-width: 530px;
+    margin: auto;
+  }
+}
 .log-in > div {
   width: 550px;
   padding: 15px;

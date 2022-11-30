@@ -1,11 +1,3 @@
-
-/*body{
-    background: #fffffe;
-    margin: 0;
-    padding: 0;
-}*/
-
-
 header {
     width: 100%;
     height: 250px;
@@ -52,6 +44,21 @@ font-style: oblique;
 p{
 padding-left: 15px;
 
+}
+
+@media only screen and (max-width: 845px){
+    header{
+        height: 240px;
+    }
+    h1{
+        font-size: 40px;
+    }
+    h3{
+        font-size: 30px;
+    }
+    h6{
+        font-size: 18px;
+    }
 }
 
 footer{
@@ -105,6 +112,13 @@ section.uno{
     height: 100%;
 }
 
+@media only screen and (max-width:845 ){
+    .gallery{
+        grid-template-columns: repeat(2,minmax(0,1fr));
+        padding: 2px;
+    }
+}
+
 .clearfix::after {
     content: "";
     display: table;
@@ -119,4 +133,3 @@ section {
 div > h3{
     margin-top: 20px;
 }
-

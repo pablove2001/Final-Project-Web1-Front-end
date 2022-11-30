@@ -76,12 +76,13 @@ buttonagregar.addEventListener('click', () => {
   const item = document.querySelector('.item');
 
   const data = {
-    authorization: sessionStorage.getItem('token'),
+    authorization: sessionStorage.getItem('token'), 
     id_producto: producto_id,
     cantidad: cantidad
   }
-  axios.put('http://localhost:3000/carrito', data).then((response) => {
+  axios.put('http://localhost:3000/carrito',data ,{ headers: data }).then((response) => {
     console.log(response);
+    alert('Se agrego correctamente');
   }).catch((err) => {
     console.log(err);
   });
