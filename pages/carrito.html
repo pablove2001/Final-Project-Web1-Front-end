@@ -190,7 +190,7 @@
                                         <path
                                             d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
                                     </svg></button>
-                            </div>
+                            </div>  
                         <td>
                             <div>$</div>
                         </td>
@@ -203,12 +203,15 @@
             <button type="button" class="btn btn-danger" id="eliminar">Elimina carrito</button>
         </di>
         <div id="sub">
-            <div id="subtotal"> Subtotal</div>
-            <div id="cantidad"> $00.00</div>
+            <div id="subtotal">
+                <div class="linea"> Subtotal $</div>
+                <div class="linea" id="cantidad"> 00.00</div>
+            </div>
             <div id="pago">
-                <a href="productos.html"><button type="button" class="btn btn-primary btn-lg" id="btn-comprando">Continuar comprando</button></a>
+                <a href="productos.html"><button type="button" class="btn btn-primary btn-lg"
+                        id="btn-comprando">Continuar comprando</button></a>
                 <button type="button" class="btn btn-primary btn-lg" id="btn-pago">Continuar
-                        con el pago</button>
+                    con el pago</button>
             </div>
         </div>
     </section>

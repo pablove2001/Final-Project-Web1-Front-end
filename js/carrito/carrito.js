@@ -11,6 +11,7 @@ axios.get('http://localhost:3000/account', { headers: data }).then((response) =>
     window.location = 'log-in.html';  
 });
 
+var subtotal=0;
 
 axios.get('http://localhost:3000/carrito', { headers: data }).then((response) => {
     console.log(response);
@@ -36,8 +37,9 @@ axios.get('http://localhost:3000/carrito', { headers: data }).then((response) =>
                 <div>${item.cantidad * producto.precio}</div>
             </td>
         </tr>`;
-
+        subtotal += item.cantidad * producto.precio; 
         document.getElementById("tabla_productos").innerHTML = elementos;
+        document.getElementById("cantidad").innerHTML = subtotal;
         }).catch((err) => {
             console.log(err);
         });
@@ -50,6 +52,8 @@ buttoneliminar.addEventListener('click', () => {
     console.log('Eliminado');
     axios.delete('http://localhost:3000/carrito/all',{ headers: data}).then((respuesta) =>{
         console.log('respuesta',respuesta);
+        subtotal=0;
+        document.getElementById("cantidad").innerHTML = subtotal;
         document.getElementById("tabla_productos").innerHTML = '';
         alert('Tu carrito fue eliminado');
     }).catch((err) => {
@@ -62,6 +66,8 @@ buttoncomprar.addEventListener('click', () => {
     console.log('Comprar');
     axios.delete('http://localhost:3000/carrito/all',{ headers: data}).then((respuesta) =>{
         console.log('respuesta',respuesta);
+        subtotal=0;
+        document.getElementById("cantidad").innerHTML = subtotal;
         document.getElementById("tabla_productos").innerHTML = '';
         alert('Tu compra fue exitosa');
     }).catch((err) => {
