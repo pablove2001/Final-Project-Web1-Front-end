@@ -1,69 +1,88 @@
-header{
+header {
     width: 100%;
-    height: 200px;
+    height: 250px;
+    background-color: #a0a98e;
+    background-size: cover;
+    background-position: center;
     font-family: "Oswald", sans-serif;
-    font-size: 50px;
-    color: rgb(0, 0, 0);
+    text-align: center;
+    color: rgb(255, 255, 255);
     display: flex;
     align-items: center;
-    background-color: #a0a98e;
-    text-align: center;
 }
 
-header > div{
-    position:absolute;
-      left: 5px;
-      right: 5px;
-    text-align: center;
-    align-items: center;
-  }
-
-div.espacio{
+header>div {
+    margin: auto;
+    width: auto;
+}
+header h1 {
+    margin: 0;
+    padding: 0px 0px;
+    border: 0;
+    font-size: 65px;
+}
+div.espacio {
     width: 100%;
     height: 100%;
     margin-top: 40px;
- 
-}
 
-section{
+}
+@media only screen and (max-width: 700px) {
+    header h1 {
+      font-size: 38px;
+    }
+    header div > div {
+      font-size: 19px;
+      padding-bottom: 20px;
+    }
+    header {
+      background-position: right;
+      height: 270px;
+    }
+  }
+  
+
+section {
 
     width: 100%;
-    height:  100%;
+    height: 100%;
     align-items: center;
-    
+
 }
-img.ajuste{
+
+img.ajuste {
     width: 50%;
     height: 80%;
- 
+
     align-items: center;
     position: relative;
     left: 25%;
     top: 30px;
 }
 
-#imag-card{
- 
+#imag-card {
+
     width: 100%;
     height: 100%;
 
 }
 
-#div-imgp{
+#div-imgp {
 
     width: auto;
     height: auto;
     align-items: center;
     position: relative;
     left: 25%;
-   width: 50%;
+    width: 50%;
 
 }
 
-h3.ingre{
+h3.ingre {
     font-family: 'Courier New', Courier, monospace;
-    
+
 }
-div.card-title{
+
+div.card-title {
     text-align: center;
 }

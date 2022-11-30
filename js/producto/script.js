@@ -1,9 +1,12 @@
 console.log("Incio de JS");
+console.log("Token:", sessionStorage.getItem('token'));
 
 const url = "http://localhost:3000/productos/";
+let producto_id = -1;
+
 
 window.onload = () => {
-  let producto_id = -1;
+  //let producto_id =-1;
   const length_url = window.location.href.length - 1;
   const url_href = window.location.href;
 
@@ -65,4 +68,44 @@ window.onload = () => {
     });
 };
 
+
+const buttonagregar = document.getElementById("addc");
+buttonagregar.addEventListener('click', () => {
+  console.log('Click');
+  const cantidad = document.querySelector('input[name="cantidad"]').value;
+  const item = document.querySelector('.item');
+
+  const data = {
+    authorization: sessionStorage.getItem('token'),
+    id_producto: producto_id,
+    cantidad: cantidad
+  }
+  axios.put('http://localhost:3000/carrito', data).then((response) => {
+    console.log(response);
+  }).catch((err) => {
+    console.log(err);
+  });
+});
+
+
+
+/*
+  YA MUESTRA EL CLICK
+  const buttonagregar= document.getElementById("addc");
+
+buttonagregar.addEventListener('click', () => {
+  console.log('Click');
+})
+*/
+
+/*
+document.addEventListener('submit' ,(ev) =>{
+  console.log('Evento submit',ev);
+  ev.preventDefault();
+  const cantidad =  document.querySelector('input[name="cantidad"]').value;
+  const agregar = document.querySelector('button[name="agregar"]');
+  console.log('Carrito',cantidad, agregar);
+})
+
 console.log("Final  de JS");
+*/
