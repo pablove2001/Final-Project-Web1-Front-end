@@ -19,9 +19,7 @@ window.onload = () => {
                       ${producto.nombre}
                     </p>
                   </div>
-                  <span>${
-                    Math.floor(Math.random() * 2) == 1 ? "★★★★★" : "★★★★☆"
-                  } (${Math.floor(Math.random() * 500)})</span><br />
+                 
                   <span>$${producto.precio.toFixed(2)}</span>
                 </div>
               </div>
