@@ -1,9 +1,8 @@
 console.log("Incio de JS");
-console.log("Token:", sessionStorage.getItem('token'));
+console.log("Token:", sessionStorage.getItem("token"));
 
 const url = "https://cleorganic.herokuapp.com/productos/";
 let producto_id = -1;
-
 
 window.onload = () => {
   //let producto_id =-1;
@@ -68,25 +67,29 @@ window.onload = () => {
     });
 };
 
-
 const buttonagregar = document.getElementById("addc");
-buttonagregar.addEventListener('click', () => {
-  console.log('Click');
+buttonagregar.addEventListener("click", () => {
+  console.log("Click");
+  if (sessionStorage.getItem("token") == null) {
+    window.location = "log-in.html";
+  }
   const cantidad = document.querySelector('input[name="cantidad"]').value;
-  const item = document.querySelector('.item');
+  const item = document.querySelector(".item");
 
   const data = {
-    authorization: sessionStorage.getItem('token'), 
-  }
+    authorization: sessionStorage.getItem("token"),
+  };
   const dbody = {
     id_producto: producto_id,
-    cantidad: cantidad
-  }
-  axios.put('https://cleorganic.herokuapp.com/carrito',dbody ,{ headers: data }).then((response) => {
-    console.log(response);
-    alert('Se agrego correctamente');
-  }).catch((err) => {
-    console.log(err);
-  });
+    cantidad: cantidad,
+  };
+  axios
+    .put("https://cleorganic.herokuapp.com/carrito", dbody, { headers: data })
+    .then((response) => {
+      console.log(response);
+      alert("Se agrego correctamente");
+    })
+    .catch((err) => {
+      console.log(err);
+    });
 });
-
