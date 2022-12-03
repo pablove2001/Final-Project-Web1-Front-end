@@ -439,3 +439,13 @@ div.carosel {
   height: auto;
   width: auto;
 }
+
+#img-section4 {
+  width: auto;
+  height: auto;
+  text-align: center;
+}
+#img-section4 > img {
+  width: 500px;
+  margin-top: 60px;
+}
