@@ -19,6 +19,14 @@ function init_form() {
             const name = element.name;
             dtuser[name] = value;
         });
+        if(dtuser.email.length == 0 ){
+            alert('Correo vacio');
+            return; 
+        }
+        if(dtuser.password.length < 8){
+            alert('Contraseña incompleta');
+            return; 
+        }
         console.log(dtuser);
         axios.post('https://cleorganic.herokuapp.com/account/login', dtuser).then((response) =>{
             console.log("Se ingreso correctamente");
@@ -26,8 +34,7 @@ function init_form() {
             sessionStorage.setItem("token",response);
            window.location = 'index.html';  
         }).catch((err) => { 
-            console.log(err);
-            
+            alert(err);
         });
 
     });
